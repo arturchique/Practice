@@ -35,7 +35,7 @@ django-resized==0.3.11
 django-timezone-field==4.1.2
 django-tinymce==3.2.0
 djangorestframework==3.12.2
-djangorestframework-simplejwt==4.4.0
+djangorestframework-simplejwt==4.5.0
 docker==4.4.4
 docker-compose==1.28.4
 dockerpty==0.4.1
