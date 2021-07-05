@@ -13,7 +13,7 @@ defusedxml==0.7.0rc1
 Django==2.2.10
 django-templated-mail==1.1.1
 djangorestframework==3.11.0
-djangorestframework-simplejwt==4.4.0
+djangorestframework-simplejwt==4.5.0
 djoser==2.0.3
 funcsigs==1.0.2
 future==0.18.2
