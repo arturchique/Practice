@@ -127,11 +127,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
 
-# Activate Django-Heroku.
-django_heroku.settings(locals())
-
 
 try:
     from .local_settings import *
 except ImportError:
     from .prod_settings import *
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
