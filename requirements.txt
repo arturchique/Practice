@@ -11,6 +11,7 @@ data==0.4
 decorator==4.4.2
 defusedxml==0.7.0rc1
 Django==2.2.10
+django_heroku==0.3.1
 django-templated-mail==1.1.1
 djangorestframework==3.11.0
 djangorestframework-simplejwt==4.5.0
