@@ -17,7 +17,23 @@ class ProductListView(APIView):
         if search is None or address is None:
             return Response({"Введите запрос для поиска в формате address/?search=[запрос]&address=[адрес]"})
         result = ProductListView.parse(search, address)
-        return Response({"data": result})
+        return Response({
+            "data": {
+                "Утконос": {
+                    "Лук репчатый 400 г": "200 Р",
+                    "Лук зеленый 200 г": "180 Р",
+                    "Лук порей": "100 Р",
+                    "Чипсы Lay's с луком": "110 Р",
+                    "Чипсы Pringle's со сметаной и ": "200 Р",
+                    "Лук репчатый 40 г": "200 Р",
+                    "Лук зеленый 20 г": "180 Р",
+                    "Лук поре": "100 Р",
+                    "Чипсы Lays с луком": "110 Р",
+                    "Чипсы Pringle's со сметаной и луком": "200 Р",
+
+                }
+            }
+        })
 
     @staticmethod
     def parse(search, address):
