@@ -16,7 +16,7 @@ class ProductListView(APIView):
         address = request.GET.get('address')
         if search is None or address is None:
             return Response({"Введите запрос для поиска в формате address/?search=[запрос]&address=[адрес]"})
-        result = ProductListView.parse(search, address)
+        # result = ProductListView.parse(search, address)
         return Response({
             "data": {
                 "Утконос": {
